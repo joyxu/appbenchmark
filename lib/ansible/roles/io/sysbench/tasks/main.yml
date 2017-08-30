@@ -58,7 +58,6 @@
   with_items:
   - run_server.sh
   - run_test.sh
-  - setup.sh
 ## install mysql-devel
 - name: install mysql-devel and record the log to {{root_dir}}/{{tools_install_log_dir}}/{{app_name_dir}}/{{app_test_tool_dir}}/mysql-devel-install.log
   yum: name=mysql-devel
