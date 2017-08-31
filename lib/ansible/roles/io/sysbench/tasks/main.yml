@@ -5,5 +5,5 @@
   
 - include: install_sysbench.yml
 
-- include: run_test.yml 
+#- include: run_test.yml 
 ...

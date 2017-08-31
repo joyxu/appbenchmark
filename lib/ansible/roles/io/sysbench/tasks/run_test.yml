@@ -1,3 +1,2 @@
-- name: fetch  {{root_dir}}/{{tools_install_log_dir}}/{{app_name_dir}}/{{app_test_tool_dir}}/sysbench-install.log
-  fetch: src=~/{{root_dir}}/{{tools_install_log_dir}}/{{app_name_dir}}/{{app_test_tool_dir}}/sysbench-install.log dest=~/{{local_log_dir}}/ flat=yes
-
+- name: run sysbench io test
+  shell: sh  {{root_dir}}/{{app_dir}}/{{app_name_dir}}/{{app_test_tool_dir}}/run_test.sh 

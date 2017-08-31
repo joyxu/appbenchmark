@@ -4,4 +4,7 @@
 ## install sysbench
 - name: install sysbench
   shell: sh  {{root_dir}}/{{app_dir}}/{{app_name_dir}}/{{app_test_tool_dir}}/run_server.sh >>~/{{root_dir}}/{{tools_install_log_dir}}/{{app_name_dir}}/{{app_test_tool_dir}}/sysbench-install.log
+- name: fetch  {{root_dir}}/{{tools_install_log_dir}}/{{app_name_dir}}/{{app_test_tool_dir}}/sysbench-install.log
+  fetch: src=~/{{root_dir}}/{{tools_install_log_dir}}/{{app_name_dir}}/{{app_test_tool_dir}}/sysbench-install.log dest=~/{{local_log_dir}}/ flat=yes
+
 
