@@ -1,0 +1,4 @@
+- name: init test ENV
+  hosts: TestServerD05
+  roles:
+   - fio

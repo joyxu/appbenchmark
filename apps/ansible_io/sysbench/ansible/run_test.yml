@@ -1,0 +1,7 @@
+- name: RUN SYSBENCH TEST
+  hosts: TestServerD05
+  vars_files:
+   - roles/sysbench/vars/main.yml
+  tasks:
+  - name: run test
+    shell: sh ~/{{root_dir}}/{{app_dir}}/{{app_name_dir}}/{{app_test_tool_dir}}/run_test.sh 
