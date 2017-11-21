@@ -10,4 +10,4 @@ else
 fi
 export APP_ROOT=${APP_ROOT}
 
-${APP_ROOT}/apps/io/fio/setup.sh server
+${APP_ROOT}/apps/io/sysbench/setup.sh server

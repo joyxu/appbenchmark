@@ -16,5 +16,5 @@ if [ $# -lt 1 ]; then
 fi
 
 #call setup utility to setup mysql 
-${APP_ROOT}/toolset/setup/setup.sh "io" "fio" "setup_config.json" ${1}
+${APP_ROOT}/toolset/setup/setup.sh "io" "sysbench" "setup_config.json" ${1}
 
