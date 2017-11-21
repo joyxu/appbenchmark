@@ -1,15 +1,8 @@
 - name: copy common/scripts directory to target machmine
-<<<<<<< HEAD
-  copy: src=~/workplace/{{root_dir}}/{{app_dir}}/common/ dest={{root_dir}}/{{app_dir}}/common mode=0755
-
-- name: copy toolset to remote server {{root_dir}}/{{tool_set_dir}}
-  copy: src=~/workplace/{{root_dir}}/toolset/ dest={{root_dir}}/{{tool_set_dir}} mode=0755
-=======
   copy: src=~/{{root_dir}}/{{app_dir}}/common/ dest={{root_dir}}/{{app_dir}}/common mode=0755
 
 - name: copy toolset to remote server {{root_dir}}/{{tool_set_dir}}
   copy: src=~/{{root_dir}}/toolset/ dest={{root_dir}}/{{tool_set_dir}} mode=0755
->>>>>>> upstream/master
 
 - name: copy config to {{root_dir}}/{{app_dir}}/{{app_name_dir}}/{{app_test_tool_dir}}/config
   copy: src=config/ dest={{root_dir}}/{{app_dir}}/{{app_name_dir}}/{{app_test_tool_dir}}/config mode=0755

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-root_dir: "appbenchmark"
-=======
 root_dir: "appbenchmark-1"
->>>>>>> upstream/master
 app_dir: "apps"
 app_name_dir: "io"
 app_test_tool_dir: "fio"
